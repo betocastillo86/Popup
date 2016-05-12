@@ -84,6 +84,9 @@
 				widthParam : 'pw',
 				heightParam : 'ph',
 
+				// New Public properties
+				el : undefined,
+
 				// Callbacks
 				beforeOpen : function(type){},
 				afterOpen : function(){},
@@ -91,6 +94,9 @@
 				afterClose : function(){},
 				error : function(){},
 				show : function($popup, $back){
+
+					//updates the el
+					this.el = $popup;
 
 					var plugin = this;
 
